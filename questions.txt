@@ -1,0 +1,18 @@
+Q-1 :  Your application requires real-time updates (e.g., notifications, live chats). How would you implement real-time communication in a MERN application?
+
+Ans : For real time updates like notification, live chats, I will use web-socket technique. For this I will use socket.io package. I will implement real time communication between frontend (react, 'socket-io-client' package)  and the backend(nodejs).
+
+
+Q-2 : You need to implement role-based access control (RBAC) for an API where different roles (admin, user, guest) have varying access to resources. How would you design middleware in Express to enforce RBAC securely and efficiently?
+
+Ans :I will create middleware that checks the user's role (admin, user, guest) against the requested resource.I will  use JWT (JSON Web Tokens) or sessions to authenticate users and assign roles, restricting access based on their role.
+
+
+Q-3 :You need to build a real-time notification system in React, where notifications are pushed to users without needing to refresh the page. How would you integrate WebSockets or Server-Sent Events (SSE) with React to achieve this?
+
+Ans :I will use WebSockets (via Socket.io) to push notifications from the server to the client. In React, update the state with incoming notifications to display them without refreshing the page.
+
+
+Q-4:Your application is slowing down due to repeated queries to the database for commonly accessed data. How would you implement distributed caching to improve performance?
+
+Ans :I will use caching service Redis to store commonly accessed data in memory. This reduces the number of database queries and improves performance. I can cache the query data with radis and for the same query we can send the data from the radis, no need to access database.
